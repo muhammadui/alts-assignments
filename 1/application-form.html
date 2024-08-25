@@ -1,0 +1,262 @@
+<!-- TailwindCSS Version -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlock yout Potential | AltSchool Africa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full justify-center items-center flex flex-col">
+      <div class="logoWrapper md:hidden">
+        <img src="images/logo.svg" alt="" />
+      </div>
+
+      <div class="application__form w-full flex items-start lg:h-screen">
+        <div
+          class="left__col fixed overflow-hidden hidden lg:flex flex-col w-[48%] p-12 items-center justify-center bg-[#fffcf8] h-screen"
+        >
+          <div class="illustration__wrapper">
+            <img
+              src="images/hero-illustration.png"
+              alt=""
+              class="w-[400px] pt-8 h-auto contain"
+            />
+          </div>
+          <h1 class="text-4xl lg:text-[2.4rem] font-bold text-center px-6">
+            Learn highly sought after skills without hassle.
+          </h1>
+          <div class="socialMedia__wrapper flex gap-4 mt-20">
+            <a href="http://twitter.com"
+              ><img src="images/icon-twitter.svg" alt="twitter"
+            /></a>
+            <a href="http://twitter.com"
+              ><img src="images/icon-instagram.svg" alt="twitter"
+            /></a>
+            <a href="http://twitter.com"
+              ><img src="images/icon-facebook.svg" alt="twitter"
+            /></a>
+            <a href="http://twitter.com"
+              ><img src="images/icon-linkedin.svg" alt="twitter"
+            /></a>
+          </div>
+          <a href="" class="mt-2">Tel: 0800ALTSCHOOL</a>
+          <p class="mt-4">&copy; 2024 AltSchool Africa. All rights reserved.</p>
+        </div>
+        <div
+          class="right__col flex flex-col p-4 md:p-[40px] flex-1 w-[52%] lg:ml-[48%]"
+        >
+          <p
+            class="font-medium flex items-center justify-center md:w-full md:justify-end md:items-end"
+          >
+            Already an AltSchooler?
+            <span class="px-1 font-bold text-[#0367f2]"> Sign In!</span>
+          </p>
+          <h2 class="pt-8 lg:pt-24 text-3xl font-semibold text-[#0b1e4b] mb-4">
+            Signup
+          </h2>
+          <p class="text-[#85888d] pb-3">
+            Take the next steps to apply at AltSchool Africa
+          </p>
+          <div class="apply__form text-[0b1e4b] mt-2 md:mt-6">
+            <form action="" class="flex flex-col space-y-4">
+              <div
+                class="firstname__lastname flex flex-col lg:flex-row w-full justify-between gap-4"
+              >
+                <div class="firstname flex gap-1 flex-col w-full">
+                  <label for="firstname">First Name</label>
+                  <input
+                    type="text"
+                    class="rounded-md p-3 text-sm bg-[#fafafa]"
+                    placeholder="Enter first Name"
+                  />
+                </div>
+                <div class="flex gap-1 flex-col lastname w-full">
+                  <label for="lastname">Last Name</label>
+                  <input
+                    type="text"
+                    class="rounded-md p-3 text-sm bg-[#fafafa]"
+                    placeholder="Enter first Name"
+                    id="lastname"
+                  />
+                </div>
+              </div>
+              <!-- Gender DOB -->
+              <div
+                class="gender__dob flex flex-col lg:flex-row w-full justify-between gap-4"
+              >
+                <div class="firstname flex gap-1 flex-col w-full">
+                  <label for="gender">Gender</label>
+                  <input
+                    type="text"
+                    class="rounded-md p-3 text-sm bg-[#fafafa]"
+                    placeholder="Enter first Name"
+                  />
+                </div>
+                <div class="flex gap-1 flex-col lastname w-full">
+                  <label for="dob">Date of Birth</label>
+                  <input
+                    type="date"
+                    class="rounded-md p-3 text-sm bg-[#fafafa]"
+                    placeholder="dd/mm/yy"
+                    id="lastname"
+                  />
+                </div>
+              </div>
+              <!-- Email Phone Number -->
+              <div
+                class="email__phone flex flex-col lg:flex-row w-full justify-between gap-4"
+              >
+                <div class="firstname flex gap-1 flex-col w-full">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="rounded-md p-3 text-sm bg-[#fafafa]"
+                    placeholder="enter email address"
+                  />
+                </div>
+                <div class="flex gap-1 flex-col lastname w-full">
+                  <label for="mobile">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="rounded-md p-3 text-sm bg-[#fafafa]"
+                    placeholder="0812345678"
+                    id="mobile"
+                  />
+                </div>
+              </div>
+              <!-- Country State of Residence -->
+              <div
+                class="email__phone flex flex-col lg:flex-row w-full justify-between gap-4"
+              >
+                <div class="firstname flex gap-1 flex-col w-full">
+                  <label for="country">Country</label>
+                  <select
+                    id="country"
+                    name="country"
+                    class="rounded-md p-3 text-sm bg-[#fafafa] appearance-none bg-no-repeat pr-8"
+                    style="
+                      background-image: url('images/arrow-down.svg');
+                      background-position: calc(100% - 0.75rem) center;
+                      background-size: 1rem 1rem;
+                    "
+                  >
+                    <option value="" disabled selected>
+                      Select your country
+                    </option>
+
+                    <option value="USA">United States</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="India">India</option>
+                    <option value="Russia">Russia</option>
+                    <option value="China">China</option>
+                    <option value="Mexico">Mexico</option>
+                  </select>
+                </div>
+                <div class="flex gap-1 flex-col w-full">
+                  <label for="states">State</label>
+                  <input
+                    type="text"
+                    class="rounded-md p-3 text-sm bg-[#fafafa]"
+                    placeholder="enter your state"
+                    id="states"
+                  />
+                </div>
+              </div>
+              <!-- How Did your hear about Us -->
+              <div class="channel flex gap-1 flex-col">
+                <label for="channel-selection"
+                  >How did you hear about us?</label
+                >
+                <select
+                  id="channel-selection"
+                  name="channel-selection"
+                  class="rounded-md p-3 text-sm bg-[#fafafa] appearance-none bg-no-repeat pr-8"
+                  style="
+                    background-image: url('images/arrow-down.svg');
+                    background-position: calc(100% - 0.75rem) center;
+                    background-size: 1rem 1rem;
+                  "
+                >
+                  <option value="" disabled selected>Select a channel</option>
+                  <option value="twitter">Twitter</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="youtube">YouTube</option>
+                  <option value="friend">Friend</option>
+                  <option value="whatsapp">WhatsApp</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="billboard">Billboard</option>
+                </select>
+              </div>
+              <!-- Password & Confirm Password -->
+              <div
+                class="password flex flex-col lg:flex-row w-full justify-between gap-4"
+              >
+                <div class="firstname flex gap-1 flex-col w-full password">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="rounded-md p-3 text-sm bg-[#fafafa]"
+                    placeholder="enter password"
+                  />
+                </div>
+                <div class="flex gap-1 flex-col w-full confirm__password">
+                  <label for="confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    class="rounded-md p-3 text-sm bg-[#fafafa]"
+                    placeholder="enter password again"
+                    id="confirm-password"
+                  />
+                </div>
+              </div>
+              <!-- Terms & Agreements -->
+              <div class="terms__agreements">
+                <p class="text-sm">
+                  By clicking continue, I agree to
+                  <span class="text-[#2054d2]">Terms of Use</span> and
+                  acknowledge that I have read the
+                  <span class="text-[#2054d2]">Privacy Policy</span>.
+                </p>
+              </div>
+              <button
+                type="submit"
+                class="bg-[#6a6ff5] w-full flex items-center gap-2 justify-center p-3 lg:p-4 rounded-md text-white"
+              >
+                <span>Submit</span>
+                <img src="images/asset 8.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

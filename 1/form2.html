@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlock your Potential</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="application">
+      <div class="application__container">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Logo" />
+        </div>
+
+        <div class="application__form">
+          <div class="left-col">
+            <div class="left-col__illustration-wrapper">
+              <img
+                src="images/hero-illustration.png"
+                alt="Hero Illustration"
+                class="left-col__illustration"
+              />
+            </div>
+            <h1 class="left-col__title">
+              Learn highly sought after skills without hassle.
+            </h1>
+            <div class="left-col__social-media">
+              <a href="http://twitter.com"
+                ><img src="images/icon-twitter.svg" alt="twitter"
+              /></a>
+              <a href="http://instagram.com"
+                ><img src="images/icon-instagram.svg" alt="instagram"
+              /></a>
+              <a href="http://facebook.com"
+                ><img src="images/icon-facebook.svg" alt="facebook"
+              /></a>
+              <a href="http://linkedin.com"
+                ><img src="images/icon-linkedin.svg" alt="linkedin"
+              /></a>
+            </div>
+            <a href="tel:0800ALTSCHOOL" class="left-col__phone"
+              >Tel: 0800ALTSCHOOL</a
+            >
+            <p class="left-col__copyright">
+              &copy; 2024 AltSchool Africa. All rights reserved.
+            </p>
+          </div>
+          <div class="right-col">
+            <p class="right-col__header text-center">
+              Already an AltSchooler?
+              <span class="right-col__signin-link">Sign In!</span>
+            </p>
+            <h2 class="right-col__title">Signup</h2>
+            <p class="right-col__subtitle">
+              Take the next steps to apply at AltSchool Africa
+            </p>
+            <div class="apply-form">
+              <form class="apply-form__container">
+                <div class="apply-form__row">
+                  <div class="apply-form__field">
+                    <label for="firstname">First Name</label>
+                    <input
+                      type="text"
+                      id="firstname"
+                      class="apply-form__input"
+                      placeholder="Enter first Name"
+                    />
+                  </div>
+                  <div class="apply-form__field">
+                    <label for="lastname">Last Name</label>
+                    <input
+                      type="text"
+                      id="lastname"
+                      class="apply-form__input"
+                      placeholder="Enter last Name"
+                    />
+                  </div>
+                </div>
+                <div class="apply-form__row">
+                  <div class="apply-form__field">
+                    <label for="gender">Gender</label>
+                    <input
+                      type="text"
+                      id="gender"
+                      class="apply-form__input"
+                      placeholder="Enter gender"
+                    />
+                  </div>
+                  <div class="apply-form__field">
+                    <label for="dob">Date of Birth</label>
+                    <input
+                      type="date"
+                      id="dob"
+                      class="apply-form__input"
+                      placeholder="dd/mm/yy"
+                    />
+                  </div>
+                </div>
+                <div class="apply-form__row">
+                  <div class="apply-form__field">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      class="apply-form__input"
+                      placeholder="enter email address"
+                    />
+                  </div>
+                  <div class="apply-form__field">
+                    <label for="mobile">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="mobile"
+                      class="apply-form__input"
+                      placeholder="0812345678"
+                    />
+                  </div>
+                </div>
+                <div class="apply-form__row">
+                  <div class="apply-form__field">
+                    <label for="country">Country</label>
+                    <select
+                      id="country"
+                      name="country"
+                      class="apply-form__select"
+                    >
+                      <option value="" disabled selected>
+                        Select your country
+                      </option>
+                      <option value="USA">United States</option>
+                      <option value="Nigeria">Nigeria</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="South Africa">South Africa</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Ghana">Ghana</option>
+                      <option value="Brazil">Brazil</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Canada">Canada</option>
+                      <option value="India">India</option>
+                      <option value="Russia">Russia</option>
+                      <option value="China">China</option>
+                      <option value="Mexico">Mexico</option>
+                    </select>
+                  </div>
+                  <div class="apply-form__field">
+                    <label for="states">State</label>
+                    <input
+                      type="text"
+                      id="states"
+                      class="apply-form__input"
+                      placeholder="enter your state"
+                    />
+                  </div>
+                </div>
+                <div class="apply-form__field">
+                  <label for="channel-selection"
+                    >How did you hear about us?</label
+                  >
+                  <select
+                    id="channel-selection"
+                    name="channel-selection"
+                    class="apply-form__select"
+                  >
+                    <option value="" disabled selected>Select a channel</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="friend">Friend</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="billboard">Billboard</option>
+                  </select>
+                </div>
+                <div class="apply-form__row">
+                  <div class="apply-form__field">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      class="apply-form__input"
+                      placeholder="enter password"
+                    />
+                  </div>
+                  <div class="apply-form__field">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input
+                      type="password"
+                      id="confirm-password"
+                      class="apply-form__input"
+                      placeholder="enter password again"
+                    />
+                  </div>
+                </div>
+                <div class="apply-form__terms">
+                  <p>
+                    By clicking continue, I agree to
+                    <span class="apply-form__terms-link">Terms of Use</span> and
+                    acknowledge that I have read the
+                    <span class="apply-form__terms-link">Privacy Policy</span>.
+                  </p>
+                </div>
+                <button type="submit" class="apply-form__submit">
+                  <span>Submit</span>
+                  <img src="images/asset 8.svg" alt="Submit" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
