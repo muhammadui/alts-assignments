@@ -3,230 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Ibrahim Umar - Tech Innovator</title>
+    <title>Muhammad Ibrahim Umar - AltSchool Profile</title>
     <style>
-      :root {
-        --primary-color: #2c3e50;
-        --secondary-color: #3498db;
-        --text-color: #333;
-        --bg-color: #ecf0f1;
+      html {
+        scroll-behavior: smooth;
       }
+
       body {
-        font-family: "Roboto", sans-serif;
+        font-family: "Arial", sans-serif;
         line-height: 1.6;
-        color: var(--text-color);
-        background-color: var(--bg-color);
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+        color: #333;
+        background-color: #f9f9f9;
       }
       .container {
-        max-width: 1200px;
+        max-width: 800px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
       header {
-        background-color: var(--primary-color);
-        color: white;
-        padding: 2rem 0;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 1rem 0;
         text-align: center;
+      }
+      nav {
+        background-color: #34495e;
+        padding: 10px 0;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-weight: bold;
       }
       h1,
       h2 {
-        margin: 0;
+        color: #2c3e50;
       }
-      .hero {
-        position: relative;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-        overflow: hidden;
-      }
-      .hero video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-      }
-      .hero-content {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 2rem;
-        border-radius: 10px;
-      }
-      .section {
-        padding: 4rem 0;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-      }
-      .card {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        transition: transform 0.3s ease;
-      }
-      .card:hover {
-        transform: translateY(-5px);
-      }
-      .card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-      .card-content {
-        padding: 1.5rem;
-      }
-      .btn {
-        display: inline-block;
-        background-color: var(--secondary-color);
-        color: white;
-        padding: 0.8rem 1.5rem;
-        border-radius: 5px;
+      .scroll-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 10px 15px;
         text-decoration: none;
-        transition: background-color 0.3s ease;
-      }
-      .btn:hover {
-        background-color: #2980b9;
+        border-radius: 5px;
+        font-weight: bold;
       }
       footer {
-        background-color: var(--primary-color);
-        color: white;
+        background-color: #2c3e50;
+        color: #ecf0f1;
         text-align: center;
         padding: 1rem 0;
-      }
-      @media (max-width: 768px) {
-        .hero {
-          height: 70vh;
-        }
-        .grid {
-          grid-template-columns: 1fr;
-        }
+        margin-top: 2rem;
       }
     </style>
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1>Muhammad Ibrahim Umar</h1>
-        <p>Tech Innovator | Full-Stack Developer | Problem Solver</p>
-      </div>
+      <h1>Muhammad Ibrahim Umar</h1>
+      <p>AltSchool ID: MALTSE32</p>
     </header>
 
-    <main>
-      <section class="hero">
-        <video autoplay loop muted playsinline>
-          <source src="path_to_your_video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-          <h2>Transforming Ideas into Reality</h2>
-          <p>From modding software at 10 to shaping the future of tech today</p>
-          <a href="#about" class="btn">Discover My Journey</a>
-        </div>
-      </section>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#biography">Biography</a></li>
+        <li><a href="#altschool-reason">Why</a></li>
+        <li><a href="#goals">Goals</a></li>
+      </ul>
+    </nav>
 
-      <section id="about" class="section">
-        <div class="container">
+    <div class="container">
+      <main>
+        <section id="about">
           <h2>About Me</h2>
-          <div class="grid">
-            <div class="card">
-              <picture>
-                <source
-                  srcset="path_to_desktop_image.jpg"
-                  media="(min-width: 1024px)"
-                />
-                <source
-                  srcset="path_to_tablet_image.jpg"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  src="path_to_mobile_image.jpg"
-                  alt="Muhammad working on a project"
-                />
-              </picture>
-              <div class="card-content">
-                <h3>My Story</h3>
-                <p>
-                  From my first IT job at 11 to becoming a full-stack developer,
-                  every step has been driven by passion and curiosity.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src="path_to_skills_image.jpg"
-                alt="Tech skills visualization"
-              />
-              <div class="card-content">
-                <h3>Skills & Expertise</h3>
-                <p>
-                  Mastering both frontend and backend technologies to create
-                  seamless, innovative solutions.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src="path_to_goals_image.jpg"
-                alt="Future goals representation"
-              />
-              <div class="card-content">
-                <h3>Vision & Goals</h3>
-                <p>
-                  Aiming to be in the top 1% of global engineers and fostering a
-                  community of future tech leaders.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          <p>
+            I am a software engineer specializing in creating interactive,
+            user-friendly, and progressive web applications. Currently enhancing
+            my skills through the AltSchool School of Engineering programme.
+          </p>
+        </section>
 
-      <section
-        class="section"
-        style="background-color: var(--primary-color); color: white"
-      >
-        <div class="container">
-          <h2>Hear My Tech Philosophy</h2>
-          <audio controls style="width: 100%; margin-top: 1rem">
-            <source src="path_to_your_audio.mp3" type="audio/mpeg" />
-            <source src="path_to_your_audio.ogg" type="audio/ogg" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      </section>
+        <section id="biography">
+          <h2>Professional Biography</h2>
+          <p>
+            With a background in software modification since the age of 10, I've
+            cultivated a deep understanding of technology and its applications.
+            My journey in tech began early, securing my first IT job at just 11
+            years old. This early start has provided me with a unique
+            perspective and a wealth of experience in the field.
+          </p>
+          <p>
+            As a seasoned frontend engineer, I've developed a keen eye for user
+            experience and interface design. My passion for problem-solving
+            through technology drives me to continuously expand my skillset and
+            tackle new challenges in the ever-evolving tech landscape.
+          </p>
+        </section>
 
-      <section class="section">
-        <div class="container">
-          <h2>Featured Projects</h2>
-          <div class="grid">
-            <!-- Repeat this card structure for each project -->
-            <div class="card">
-              <img src="path_to_project_image.jpg" alt="Project name" />
-              <div class="card-content">
-                <h3>Project Name</h3>
-                <p>Brief description of the project and its impact.</p>
-                <a href="#" class="btn">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+        <section id="altschool-reason">
+          <h2>Why I Chose AltSchool</h2>
+          <p>
+            I joined AltSchool to elevate my backend engineering capabilities,
+            complementing my existing frontend expertise. This strategic
+            decision aligns with my goal of becoming a well-rounded, full-stack
+            engineer capable of building comprehensive, scalable solutions.
+          </p>
+          <p>
+            While external motivation plays a minor role, my primary drive comes
+            from an intrinsic desire for self-improvement and the pursuit of
+            excellence in my craft.
+          </p>
+        </section>
+
+        <section id="goals">
+          <h2>Goals for the School of Engineering Programme</h2>
+          <ul>
+            <li>
+              Develop innovative solutions that address real-world challenges
+              and contribute to technological advancement
+            </li>
+            <li>
+              Establish a thriving community dedicated to mentoring and training
+              aspiring engineers
+            </li>
+            <li>
+              Graduate as the top-performing Engineering student while actively
+              supporting and elevating fellow students
+            </li>
+
+            <li>
+              Ascend to the top 1% of global engineers, mastering both frontend
+              and backend technologies
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <a href="#" class="scroll-top" aria-label="Scroll to top">↑</a>
 
     <footer>
-      <p>
-        &copy; 2024 Muhammad Ibrahim Umar. Innovating for a better tomorrow.
-      </p>
+      <p>&copy; 2024 Muhammad I Umar. All rights reserved.</p>
     </footer>
   </body>
 </html>
